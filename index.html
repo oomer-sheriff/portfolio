@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oomer Shariff | AI Engineer</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Devicon -->
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+</head>
+
+<body>
+    <canvas id="antigravity-canvas"></canvas>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Oomer Shariff</div>
+                <div class="nav-links">
+                    <a href="#about">About</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#projects">Work</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero">
+            <div class="container hero-content">
+                <h1>Building Scalable<br><span>AI Systems</span></h1>
+                <p class="hero-subtitle">AI Engineer & Distributed Systems Architect</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience">
+            <div class="container">
+                <h2 class="section-title">Experience</h2>
+                <div class="timeline">
+
+                    <!-- Thurro -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="experience-card">
+                            <div class="role-header">
+                                <div>
+                                    <h3 class="role-title">AI Engineer (Intern)</h3>
+                                    <span class="company-name">Thurro</span>
+                                </div>
+                                <span class="date-range">Jul 2025 – Oct 2025</span>
+                            </div>
+                            <ul class="experience-list">
+                                <li>Engineered a scalable data processing pipeline using ClickHouseDB to autofill
+                                    financial data, integrating Opik for LLM observability.</li>
+                                <li>Automated ETL processes for unstructured financial releases, creating a standardized
+                                    schema that improved downstream reporting consistency by 90%.</li>
+                                <li>Led migration from Azure to AWS to migrate legacy workloads, implementing
+                                    auto-scaling policies to handle high concurrency, cutting costs by up to 50%.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Jaffa AI -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="experience-card">
+                            <div class="role-header">
+                                <div>
+                                    <h3 class="role-title">Generative AI Engineer (Intern)</h3>
+                                    <span class="company-name">Jaffa AI</span>
+                                </div>
+                                <span class="date-range">Sep 2024 – Jul 2025</span>
+                            </div>
+                            <ul class="experience-list">
+                                <li>Optimized a multi-tiered retrieval system (Hybrid RAG) and implemented Arize for
+                                    performance monitoring, improving performance by 80%.</li>
+                                <li>Built a low-latency real-time streaming architecture using WebSockets and Redis for
+                                    audio data processing.</li>
+                                <li>Developed a distributed document processing service utilizing Azure Document
+                                    Intelligence to parse complex financial PDFs.</li>
+                                <li>Implemented an algorithmic routing logic layer to dynamically dispatch queries
+                                    between models (GPT-4o vs. Gemini Flash), optimizing costs by 40%.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+
+                    <!-- YouTube Agentic Microservice System -->
+                    <div class="project-card">
+                        <div class="project-content">
+                            <div class="project-header"
+                                style="display:flex; justify-content:space-between; align-items:center;">
+                                <h3 class="project-title">YouTube Agentic System</h3>
+                                <div class="project-links">
+                                    <a href="https://github.com/oomer-sheriff/youtube-summarizer" target="_blank"><i
+                                            class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                            <p style="color:var(--text-secondary); margin-bottom:1rem; font-size:0.95rem;">
+                                A distributed event-driven microservice system separating reasoning engines from backend
+                                tools using the Model Context Protocol (MCP).
+                            </p>
+                            <div class="tech-stack">
+                                <span class="tech-badge">FastAPI</span>
+                                <span class="tech-badge">Celery</span>
+                                <span class="tech-badge">RabbitMQ</span>
+                                <span class="tech-badge">Redis</span>
+                                <span class="tech-badge">Docker</span>
+                                <span class="tech-badge">FastMCP</span>
+                                <span class="tech-badge">Kubernetes</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Add more placeholders if needed, or stick to the main one to highlight quality -->
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <div class="container">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="skills-container">
+
+                    <div class="skill-category">
+                        <h3>Languages</h3>
+                        <div class="skill-items">
+                            <i class="devicon-python-plain colored" title="Python" style="font-size: 2.5rem;"></i>
+                            <i class="devicon-java-plain colored" title="Java" style="font-size: 2.5rem;"></i>
+                            <i class="devicon-c-plain colored" title="C" style="font-size: 2.5rem;"></i>
+                            <i class="devicon-mysql-plain colored" title="SQL" style="font-size: 2.5rem;"></i>
+                            <i class="devicon-html5-plain colored" title="HTML5" style="font-size: 2.5rem;"></i>
+                            <i class="devicon-css3-plain colored" title="CSS3" style="font-size: 2.5rem;"></i>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Frameworks</h3>
+                        <div class="skill-items">
+                            <i class="devicon-fastapi-plain colored" title="FastAPI" style="font-size: 2.5rem;"></i>
+                            <i class="devicon-pytorch-original colored" title="PyTorch" style="font-size: 2.5rem;"></i>
+                            <i class="devicon-tensorflow-original colored" title="TensorFlow"
+                                style="font-size: 2.5rem;"></i>
+                            <!-- LangChain has no official icon yet, using a placeholder or keeping text -->
+                            <span class="skill-tag">LangChain</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Cloud & Tools</h3>
+                        <div class="skill-items">
+                            <i class="devicon-amazonwebservices-plain-wordmark colored" title="AWS"
+                                style="font-size: 2.5rem;"></i>
+                            <i class="devicon-azure-plain colored" title="Azure" style="font-size: 2.5rem;"></i>
+                            <i class="devicon-docker-plain colored" title="Docker" style="font-size: 2.5rem;"></i>
+                            <i class="devicon-redis-plain colored" title="Redis" style="font-size: 2.5rem;"></i>
+                            <i class="devicon-git-plain colored" title="Git" style="font-size: 2.5rem;"></i>
+                            <!-- Others kept as text tags if no icon -->
+                            <span class="skill-tag">ClickHouseDB</span>
+                            <span class="skill-tag">Arize</span>
+                            <span class="skill-tag">Opik</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Concepts</h3>
+                        <div class="skill-items">
+                            <span class="skill-tag">Distributed Systems</span>
+                            <span class="skill-tag">System Design</span>
+                            <span class="skill-tag">RAG</span>
+                            <span class="skill-tag">Data Structures</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <p style="color:var(--text-secondary); max-width:500px; margin:0 auto;">
+                    I'm currently looking for new opportunities. Whether you have a question or just want to say hi,
+                    I'll try my best to get back to you!
+                </p>
+                <div class="contact-links">
+                    <a href="mailto:oomersheriff12@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="https://linkedin.com/in/oomer-sheriff-a20682309" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/oomer-sheriff" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Oomer Shariff. Built with HTML, CSS, and JS.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
