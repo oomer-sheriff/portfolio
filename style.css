@@ -15,10 +15,13 @@
 
     /* Header BG */
     --header-bg: rgba(10, 10, 10, 0.8);
+
+    /* Card BG */
+    --card-bg: rgba(23, 23, 23, 0.6);
 }
 
 /* Light Mode Override */
-body.light-mode {
+html.light-mode {
     --bg-color: #f3f4f6;
     --surface-color: #ffffff;
     --surface-hover: #e5e7eb;
@@ -27,6 +30,7 @@ body.light-mode {
     --border-color: #d1d5db;
     --header-bg: rgba(255, 255, 255, 0.85);
     /* Slightly more opaque for white */
+    --card-bg: rgba(255, 255, 255, 0.8);
 }
 
 /* Accent Color Overrides */
@@ -98,10 +102,19 @@ ul {
     font-weight: 700;
     margin-bottom: 3rem;
     text-align: center;
+    margin-bottom: 3rem;
+    text-align: center;
     background: linear-gradient(to right, #fff, #9ca3af);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+html.light-mode .section-title {
+    background: none;
+    -webkit-text-fill-color: initial;
+    color: var(--text-primary);
+    /* Solid black/dark grey in light mode */
 }
 
 .btn {
@@ -330,7 +343,7 @@ nav {
 }
 
 .project-card {
-    background: rgba(23, 23, 23, 0.6);
+    background: var(--card-bg);
     /* Translucent Surface */
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -340,10 +353,17 @@ nav {
     transition: all 0.3s ease;
 }
 
+html.light-mode .project-card {
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+html.light-mode .project-card:hover {
+    border-color: var(--accent-color);
+}
+
 .project-card:hover {
     transform: translateY(-10px);
     border-color: var(--accent-color);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
 .project-content {
@@ -637,7 +657,7 @@ dialog::backdrop {
 }
 
 .arch-node {
-    background: rgba(23, 23, 23, 0.8);
+    background: var(--card-bg);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     border: 1px solid var(--border-color);

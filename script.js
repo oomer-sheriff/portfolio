@@ -73,8 +73,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Dark/Light Mode Toggle
     if (themeToggleBtn) {
         themeToggleBtn.addEventListener('click', () => {
-            document.body.classList.toggle('light-mode');
-            const isLight = document.body.classList.contains('light-mode');
+            document.documentElement.classList.toggle('light-mode');
+            const isLight = document.documentElement.classList.contains('light-mode');
 
             // Update Icon/Text
             updateThemeBtnUI(isLight);
@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function enableLightMode() {
-        document.body.classList.add('light-mode');
+        document.documentElement.classList.add('light-mode');
         updateThemeBtnUI(true);
     }
 
@@ -213,7 +213,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             draw() {
                 // Adaptive Star Color based on Theme
-                const isLight = document.body.classList.contains('light-mode');
+                const isLight = document.documentElement.classList.contains('light-mode');
                 ctx.fillStyle = isLight ? `rgba(0, 0, 0, ${this.opacity})` : `rgba(255, 255, 255, ${this.opacity})`;
 
                 ctx.beginPath();
