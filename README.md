@@ -2,10 +2,17 @@
 
 This is a modern, responsive portfolio website built with HTML, CSS, and JavaScript. It features a dark-themed design ("AI-style"), a typing animation hero, and sections for Experience, Projects, and Skills.
 
+## New Features (UI Enhancements)
+- **Mobile Menu**: Responsive hamburger menu that slides down on smaller screens.
+- **Theme Customization**: A settings panel (gear icon) that allows you to:
+    - Change Accent Colors (Blue, Purple, Green, Orange).
+    - Toggle Light/Dark Mode.
+    - Preferences are saved automatically (Local Storage).
+
 ## Project Structure
-- `index.html`: Main content file.
-- `style.css`: Styles and animations.
-- `script.js`: Interactive elements (typing effect, smooth scroll).
+- `index.html`: Main content file (now includes Settings Panel).
+- `style.css`: Styles and animations (includes Theme Variables).
+- `script.js`: Interactive elements (typing effect, smooth scroll, theme logic).
 
 ## How to Run Locally
 Simply open the `index.html` file in your preferred web browser.
@@ -20,12 +27,9 @@ Simply open the `index.html` file in your preferred web browser.
 3. Drag the `portfolio` folder onto the "Drag and drop your site output folder here" area.
 
 ### Option 2: Netlify CLI
-If you have `netlify-cli` installed:
 1. Open a terminal in this directory.
-2. Run `netlify deploy`.
-3. Follow the prompts (Select "Create & configure a new site").
-4. Run `netlify deploy --prod` when ready.
+2. Run `netlify deploy --prod`.
 
 ## Customization
-- **Colors**: Edit the `:root` variables in `style.css`.
+- **Colors**: You can add more specific colors in `style.css` under the `/* Accent Color Overrides */` section.
 - **Content**: Edit the text in `index.html`.

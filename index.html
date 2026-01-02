@@ -33,6 +33,9 @@
                     <a href="#skills">Skills</a>
                     <a href="#contact">Contact</a>
                 </div>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
             </nav>
         </div>
     </header>
@@ -223,6 +226,32 @@
             <p>&copy; 2026 Oomer Shariff. Built with HTML, CSS, and JS.</p>
         </div>
     </footer>
+
+    <!-- Settings Panel -->
+    <div class="settings-toggle">
+        <i class="fas fa-cog"></i>
+    </div>
+
+    <div class="settings-panel">
+        <h3>Customize</h3>
+
+        <div class="setting-group">
+            <label>Accent Color</label>
+            <div class="color-options">
+                <div class="color-option active" data-color="#3b82f6" style="background:#3b82f6;"></div> <!-- Blue -->
+                <div class="color-option" data-color="#8b5cf6" style="background:#8b5cf6;"></div> <!-- Purple -->
+                <div class="color-option" data-color="#10b981" style="background:#10b981;"></div> <!-- Green -->
+                <div class="color-option" data-color="#f59e0b" style="background:#f59e0b;"></div> <!-- Orange -->
+            </div>
+        </div>
+
+        <div class="setting-group">
+            <label>Mode</label>
+            <button id="theme-toggle" class="btn btn-outline btn-sm">
+                <i class="fas fa-moon"></i> <span>Dark Mode</span>
+            </button>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
