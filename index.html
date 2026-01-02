@@ -139,6 +139,9 @@
                                 <span class="tech-badge">FastMCP</span>
                                 <span class="tech-badge">Kubernetes</span>
                             </div>
+                            <button id="view-arch-btn" class="btn btn-outline btn-sm" style="margin-top: 1rem;">
+                                <i class="fas fa-sitemap"></i> View Architecture
+                            </button>
                         </div>
                     </div>
 
@@ -253,7 +256,101 @@
         </div>
     </div>
 
+    <!-- Theme Toggle Script -->
     <script src="script.js"></script>
+
+    <!-- Architecture Modal -->
+    <dialog id="arch-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>System Architecture</h2>
+                <button id="close-modal" class="close-btn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p style="color:var(--text-secondary); margin-bottom:1rem;">
+                    A high-level overview of the distributed microservices architecture, featuring the Agentic Workflow
+                    and MCP integration.
+                </p>
+                <!-- Custom Architecture Map -->
+                <div class="arch-container">
+
+                    <!-- External Client Layer -->
+                    <div class="arch-layer" id="layer-client">
+                        <div class="arch-node user" data-tooltip="End User interacting via Web UI">
+                            <i class="fas fa-user"></i>
+                            <span>User</span>
+                        </div>
+                    </div>
+
+                    <!-- Arrow Down -->
+                    <div class="flow-arrow vertical">↓ HTTP</div>
+
+                    <!-- Kubernetes Cluster -->
+                    <div class="arch-cluster">
+                        <div class="cluster-label"><i class="fas fa-cubes"></i> Kubernetes Cluster</div>
+
+                        <!-- Service Layer -->
+                        <div class="arch-row">
+                            <div class="arch-node service"
+                                data-tooltip="FastAPI Backend: Handles API requests & task dispatch">
+                                <i class="fas fa-server"></i>
+                                <span>Backend API</span>
+                            </div>
+                        </div>
+
+                        <!-- Message Broker Layer -->
+                        <div class="arch-row">
+                            <div class="arch-node db" data-tooltip="Redis: Message Broker & Result Backend">
+                                <i class="fas fa-database"></i>
+                                <span>Redis</span>
+                            </div>
+                            <div class="arch-node db" data-tooltip="RabbitMQ: Robust Task Queue">
+                                <i class="fas fa-envelope-open-text"></i>
+                                <span>RabbitMQ</span>
+                            </div>
+                        </div>
+
+                        <!-- Worker Layer -->
+                        <div class="arch-row workers">
+                            <div class="arch-group">
+                                <div class="arch-node worker-gpu"
+                                    data-tooltip="Chat Worker: Runs LLM (Arch-Function-3B) on GPU">
+                                    <i class="fas fa-microchip"></i>
+                                    <span>Chat Worker (GPU)</span>
+                                </div>
+                                <div class="arch-node volume" data-tooltip="HF Cache: Shared volume for models">
+                                    <i class="fas fa-hdd"></i>
+                                    <span>Model Cache</span>
+                                </div>
+                            </div>
+
+                            <div class="arch-node mcp" data-tooltip="MCP Server: Tools Registry">
+                                <i class="fas fa-tools"></i>
+                                <span>MCP Server</span>
+                            </div>
+
+                            <div class="arch-node worker" data-tooltip="Transcript Worker: Fetches data from YouTube">
+                                <i class="fas fa-file-alt"></i>
+                                <span>Transcript Worker</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Arrow Down -->
+                    <div class="flow-arrow vertical">↓ API Call</div>
+
+                    <!-- External Services -->
+                    <div class="arch-layer" id="layer-external">
+                        <div class="arch-node cloud" data-tooltip="YouTube Data API / Transcript">
+                            <i class="fab fa-youtube"></i>
+                            <span>YouTube</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </dialog>
 </body>
 
 </html>

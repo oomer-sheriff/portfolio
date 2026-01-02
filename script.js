@@ -116,6 +116,30 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 
+    // --- Architecture Modal Logic ---
+    const modal = document.getElementById('arch-modal');
+    const viewArchBtn = document.getElementById('view-arch-btn');
+    const closeModalBtn = document.getElementById('close-modal');
+
+    if (modal && viewArchBtn && closeModalBtn) {
+        viewArchBtn.addEventListener('click', () => {
+            modal.showModal();
+        });
+
+        closeModalBtn.addEventListener('click', () => {
+            modal.close();
+        });
+
+        // Close on backdrop click
+        modal.addEventListener('click', (e) => {
+            const rect = modal.getBoundingClientRect();
+            if (e.clientX < rect.left || e.clientX > rect.right ||
+                e.clientY < rect.top || e.clientY > rect.bottom) {
+                modal.close();
+            }
+        });
+    }
+
     // --- Smooth Scrolling ---
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
