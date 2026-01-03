@@ -489,6 +489,12 @@ html.light-mode .project-card:hover {
     color: var(--accent-color);
 }
 
+.tech-badge i,
+.skill-tag i,
+.experience-list i {
+    margin-right: 0.35rem;
+}
+
 /* Contact */
 #contact {
     padding: 6rem 0;
