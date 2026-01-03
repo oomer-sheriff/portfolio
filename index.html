@@ -46,12 +46,28 @@
         <!-- Hero Section -->
         <section id="hero">
             <div class="container hero-content">
-                <h1>Building Scalable<br><span>AI Systems</span></h1>
-                <p class="hero-subtitle">AI Engineer & Distributed Systems Architect</p>
+                <h1>Oomer Shariff <br><span>AI & Distributed Systems Engineer</span></h1>
+                <p class="hero-subtitle">
+                    I build and deploy production-grade ML & AI pipelines: scalable microservices, cloud-native
+                    infra, end-to-end data & model workflows.
+                </p>
                 <div class="hero-buttons">
                     <a href="#projects" class="btn btn-primary">View My Work</a>
                     <a href="#contact" class="btn btn-outline">Contact Me</a>
                 </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" style="padding: 4rem 0;">
+            <div class="container" style="text-align: center; max-width: 800px;">
+                <h2 class="section-title" style="font-size: 2rem; margin-bottom: 2rem;">About Me</h2>
+                <p style="font-size: 1.1rem; color: var(--text-secondary); line-height: 1.8;">
+                    I’m a software engineer passionate about bridging the gap between cutting-edge AI research and
+                    reliable, scalable production systems. My focus isn't just on training models but on
+                    <strong>orchestrating them</strong>—building the distributed infrastructure, event-driven pipelines,
+                    and microservices that make AI applications robust and valuable in the real world.
+                </p>
             </div>
         </section>
 
@@ -124,24 +140,51 @@
                                 style="display:flex; justify-content:space-between; align-items:center;">
                                 <h3 class="project-title">YouTube Agentic System</h3>
                                 <div class="project-links">
-                                    <a href="https://github.com/oomer-sheriff/youtube-summarizer" target="_blank"><i
-                                            class="fab fa-github"></i></a>
+                                    <a href="https://github.com/oomer-sheriff/youtube-summarizer" target="_blank"
+                                        title="View Source on GitHub"><i class="fab fa-github"></i></a>
                                 </div>
                             </div>
-                            <p style="color:var(--text-secondary); margin-bottom:1rem; font-size:0.95rem;">
-                                A distributed event-driven microservice system separating reasoning engines from backend
-                                tools using the Model Context Protocol (MCP).
+
+                            <!-- Summary -->
+                            <p class="project-summary">
+                                An end-to-end distributed agentic system that transforms YouTube videos into structured
+                                summaries. It decouples the Reasoning Engine (LLM) from data processing using the
+                                <strong>Model Context Protocol (MCP)</strong> and handles heavy tasks via async
+                                orchestration.
                             </p>
+
+                            <!-- Highlights -->
+                            <ul class="project-highlights">
+                                <li><i class="fas fa-check-circle"></i> <strong>Microservices Architecture</strong>:
+                                    Decoupled Backend, AI Workers, and MCP Server.</li>
+                                <li><i class="fas fa-check-circle"></i> <strong>Async Orchestration</strong>: RabbitMQ &
+                                    Celery for non-blocking transcription & inference.</li>
+                                <li><i class="fas fa-check-circle"></i> <strong>Cloud-Native</strong>: Containerized
+                                    with Docker, deployable on Kubernetes.</li>
+                                <li><i class="fas fa-check-circle"></i> <strong>Optimized caching</strong>: Redis for
+                                    vector embeddings & response caching.</li>
+                            </ul>
+
+                            <!-- Deployment Info -->
+                            <div class="deployment-info">
+                                <span><i class="fas fa-server"></i> <strong>Deployment:</strong> Kubernetes / Docker
+                                    Compose</span>
+                                <span
+                                    style="margin-left: 10px; font-size: 0.8rem; color: var(--text-secondary);">(Supports
+                                    GPU & CPU modes)</span>
+                            </div>
+
                             <div class="tech-stack">
                                 <span class="tech-badge">FastAPI</span>
                                 <span class="tech-badge">Celery</span>
                                 <span class="tech-badge">RabbitMQ</span>
                                 <span class="tech-badge">Redis</span>
                                 <span class="tech-badge">Docker</span>
-                                <span class="tech-badge">FastMCP</span>
                                 <span class="tech-badge">Kubernetes</span>
+                                <span class="tech-badge">LangChain</span>
                             </div>
-                            <button id="view-arch-btn" class="btn btn-outline btn-sm" style="margin-top: 1rem;">
+
+                            <button id="view-arch-btn" class="btn btn-sm btn-outline" style="margin-top: 1.5rem;">
                                 <i class="fas fa-sitemap"></i> View Architecture
                             </button>
                         </div>
@@ -191,6 +234,7 @@
                             <span class="skill-tag">Arize</span>
                             <span class="skill-tag">Opik</span>
                             <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Kubernetes</span>
                         </div>
                     </div>
 

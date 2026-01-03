@@ -1,21 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // --- Typing Animation ---
-    const heroText = "AI Engineer & Distributed Systems Architect";
-    const heroSubtitle = document.querySelector('.hero-subtitle');
-    let i = 0;
-
-    if (heroSubtitle) {
-        heroSubtitle.textContent = '';
-        function typeWriter() {
-            if (i < heroText.length) {
-                heroSubtitle.textContent += heroText.charAt(i);
-                i++;
-                setTimeout(typeWriter, 50);
-            }
-        }
-        setTimeout(typeWriter, 500);
-    }
-
     // --- Mobile Menu Toggle ---
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');

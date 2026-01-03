@@ -213,23 +213,30 @@ nav {
 }
 
 .hero-content h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
+    /* Slightly smaller to fit 2 lines elegantly */
     font-weight: 800;
     line-height: 1.2;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .hero-content h1 span {
     color: var(--accent-color);
+    display: block;
+    /* Force new line */
+    font-size: 2.5rem;
+    /* Different size for role */
+    margin-top: 0.5rem;
 }
 
 .hero-subtitle {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     color: var(--text-secondary);
-    margin-bottom: 2rem;
-    max-width: 600px;
+    margin-bottom: 2.5rem;
+    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
+    line-height: 1.6;
 }
 
 .hero-buttons {
@@ -385,6 +392,45 @@ html.light-mode .project-card:hover {
 
 .project-links a:hover {
     color: var(--accent-color);
+}
+
+.project-summary {
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.project-highlights {
+    list-style: none;
+    margin: 1rem 0;
+    padding: 0;
+}
+
+.project-highlights li {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: start;
+    gap: 0.5rem;
+}
+
+.project-highlights li i {
+    color: var(--accent-color);
+    margin-top: 4px;
+}
+
+.deployment-info {
+    font-size: 0.9rem;
+    color: var(--text-primary);
+    background: rgba(255, 255, 255, 0.05);
+    /* Subtle bg */
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    display: inline-block;
+    border: 1px solid var(--border-color);
 }
 
 .tech-stack {
